@@ -171,6 +171,67 @@ void int24_t::operator %=(const int24_t& rvalue) {
 }
 
 
+// logic operators
+bool int24_t::operator ==(int rvalue) const {
+    return ((int) *this) == rvalue;
+}
+
+
+bool int24_t::operator ==(const int24_t& rvalue) const {
+    return ((int) *this) == ((int) rvalue);
+}
+
+
+bool int24_t::operator !=(int rvalue) const {
+    return !this->operator ==(rvalue);
+}
+
+
+bool int24_t::operator !=(const int24_t& rvalue) const {
+    return !this->operator ==(rvalue);
+}
+
+
+bool int24_t::operator <(int rvalue) const {
+    return ((int) *this) < rvalue;
+}
+
+
+bool int24_t::operator <(const int24_t& rvalue) const {
+    return ((int) *this) < ((int) rvalue);
+}
+
+
+bool int24_t::operator <=(int rvalue) const {
+    return ((int) *this) <= rvalue;
+}
+
+
+bool int24_t::operator <=(const int24_t& rvalue) const {
+    return ((int) *this) <= ((int) rvalue);
+}
+
+
+bool int24_t::operator >(int rvalue) const {
+    return ((int) *this) > rvalue;
+}
+
+
+bool int24_t::operator >(const int24_t& rvalue) const {
+    return ((int) *this) > ((int) rvalue);
+}
+
+
+bool int24_t::operator >=(int rvalue) const {
+    return ((int) *this) >= rvalue;
+}
+
+
+bool int24_t::operator >=(const int24_t& rvalue) const {
+    return ((int) *this) > ((int) rvalue);
+}
+
+
 // output
 std::ostream& operator <<(std::ostream& os, const int24_t& obj) {
     return os << (int) obj;
