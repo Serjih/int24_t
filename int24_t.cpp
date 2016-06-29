@@ -21,13 +21,18 @@ int24_t::int24_t(const int24_t& orig) {
 
 
 // cast-operators
+int24_t::operator bool() const {
+    return ((int) *this);
+}
+
+
 int24_t::operator int() const {
     return (_bytes[2] & 0x80 ? (0xFF << 24) : 0) | (_bytes[2] << 16) | (_bytes[1] << 8) | _bytes[0];
 }
 
 
 int24_t::operator double() const {
-    return (double) ((int) (*this));
+    return (double) ((int) *this);
 }
 
 
