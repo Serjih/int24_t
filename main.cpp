@@ -4,7 +4,12 @@
 using namespace std;
 
 int main() {
-    int i = int24_t(-12);
-    cout << sizeof(int24_t) << " " << i << endl;
+    int24_t a = 123;
+    int24_t b = 234;
+
+    a += 321;
+
+    cout << "a + b = " << +(a + b) << endl;
+
     return 0;
 }

@@ -17,18 +17,19 @@ class int24_t {
 
         int24_t& operator =(int value);
         int24_t& operator =(const int24_t& value);
-        int24_t& operator +() const;
-        int24_t& operator +(int rvalue) const;
-        int24_t& operator +(const int24_t& rvalue) const;
-        int24_t& operator -() const;
-        int24_t& operator -(int rvalue) const;
-        int24_t& operator -(const int24_t& rvalue) const;
-        int24_t& operator *(int rvalue) const;
-        int24_t& operator *(const int24_t& rvalue) const;
-        int24_t& operator /(int rvalue) const;
-        int24_t& operator /(const int24_t& rvalue) const;
-        int24_t& operator %(int rvalue) const;
-        int24_t& operator %(const int24_t& rvalue) const;
+
+        int24_t operator +() const;
+        int24_t operator +(int rvalue) const;
+        int24_t operator +(const int24_t& rvalue) const;
+        int24_t operator -() const;
+        int24_t operator -(int rvalue) const;
+        int24_t operator -(const int24_t& rvalue) const;
+        int24_t operator *(int rvalue) const;
+        int24_t operator *(const int24_t& rvalue) const;
+        int24_t operator /(int rvalue) const;
+        int24_t operator /(const int24_t& rvalue) const;
+        int24_t operator %(int rvalue) const;
+        int24_t operator %(const int24_t& rvalue) const;
 
         void operator +=(int rvalue);
         void operator +=(const int24_t& rvalue);
