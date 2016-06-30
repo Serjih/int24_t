@@ -120,6 +120,35 @@ int24_t int24_t::operator %(const int24_t& rvalue) const {
 }
 
 
+// increment, decrement
+int24_t int24_t::operator ++() {
+    this->operator +=(1);
+    return *this;
+}
+
+
+int24_t int24_t::operator ++(int) {
+    auto tmp = *this;
+    this->operator +=(1);
+
+    return tmp;
+}
+
+
+int24_t int24_t::operator --() {
+    this->operator -=(1);
+    return *this;
+}
+
+
+int24_t int24_t::operator --(int) {
+    auto tmp = *this;
+    this->operator -=(1);
+
+    return tmp;
+}
+
+
 // extra-alignments
 void int24_t::operator +=(int rvalue) {
     this->operator =(this->operator +(rvalue));

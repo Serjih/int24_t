@@ -8,6 +8,7 @@ int main() {
     int24_t b = 234;
 
     a += 321;
+    a++;
 
     cout << "a + b = " << +(a + b) << endl;
 

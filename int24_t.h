@@ -32,6 +32,11 @@ class int24_t {
         int24_t operator %(int rvalue) const;
         int24_t operator %(const int24_t& rvalue) const;
 
+        int24_t operator ++();
+        int24_t operator ++(int not_used);
+        int24_t operator --();
+        int24_t operator --(int not_used);
+
         void operator +=(int rvalue);
         void operator +=(const int24_t& rvalue);
         void operator -=(int rvalue);
