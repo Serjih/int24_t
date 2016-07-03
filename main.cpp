@@ -4,13 +4,9 @@
 using namespace std;
 
 int main() {
-    int24_t a = 123;
-    int24_t b = 234;
+    int24_t a = 8388608;
 
-    a += 321;
-    a++;
-
-    cout << "a + b = " << +(a + b) << endl;
+    cout << a << endl;
 
     return 0;
 }

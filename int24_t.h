@@ -6,6 +6,10 @@
 #include <ostream>
 
 
+#define INT24_MIN -8388608
+#define INT24_MAX 8388607
+
+
 class int24_t {
     public:
         int24_t();
